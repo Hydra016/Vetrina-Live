@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/Vetrina-Live/static/css/main.c893ef70.css",
-    "main.js": "/Vetrina-Live/static/js/main.9e2e7ea4.js",
+    "main.js": "/Vetrina-Live/static/js/main.417e8e85.js",
     "static/media/iphone.PNG": "/Vetrina-Live/static/media/iphone.7d96d46a4f6a1ae36443.PNG",
-    "static/media/Image.png": "/Vetrina-Live/static/media/Image.f614f05b4135b41e1a10.png",
     "static/media/google.PNG": "/Vetrina-Live/static/media/google.450a325e0054cd9ff2c3.PNG",
     "static/media/test.PNG": "/Vetrina-Live/static/media/test.c784cc00b3ea731b1369.PNG",
     "index.html": "/Vetrina-Live/index.html",
     "main.c893ef70.css.map": "/Vetrina-Live/static/css/main.c893ef70.css.map",
-    "main.9e2e7ea4.js.map": "/Vetrina-Live/static/js/main.9e2e7ea4.js.map"
+    "main.417e8e85.js.map": "/Vetrina-Live/static/js/main.417e8e85.js.map"
   },
   "entrypoints": [
     "static/css/main.c893ef70.css",
-    "static/js/main.9e2e7ea4.js"
+    "static/js/main.417e8e85.js"
   ]
 }
