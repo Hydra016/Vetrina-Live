@@ -7,8 +7,8 @@ export const NewsProvider = ({children}) => {
     const [news, setNews] = useState([])
     
     useEffect( async() => {
-        const response = await axios.get('https://newsapi.org/v2/everything?q=riga&apiKey=39f0ca53660c4ccf83f483a17165b25d');
-        setNews(response.data.articles)
+        const response = await axios.get('https://api.spaceflightnewsapi.net/v3/articles');
+        setNews(response.data)
     },[])
 
     return (
@@ -17,3 +17,9 @@ export const NewsProvider = ({children}) => {
         </NewsContext.Provider>
     )
 }
+
+//https://api.thenewsapi.com/v1/news/top?api_token=zoF0vLrnZn9v8owS6Ev4xxsOUUG4SWMA62JZvGbG
+
+//https://api.thenewsapi.com/v1/news/headlines?locale=us&language=en&api_token=zoF0vLrnZn9v8owS6Ev4xxsOUUG4SWMA62JZvGbG
+
+//hubspot:= eu1-5aaa-5f63-4c66-8b9b-b8d5675a2c7d

@@ -10,7 +10,6 @@ import {
 } from "@material-ui/core";
 
 import { ArrowForward } from "@material-ui/icons";
-import { CardActions } from "@mui/material";
 import useStyles from "../../hooks/useStyles";
 import iphone from "../../img/iphone.PNG";
 import test from "../../img/test.PNG";
@@ -23,19 +22,23 @@ const Exclusive = () => {
     ExclusiveLink,
     ExclusiveLinkIcon,
     ExclusivesIcon,
-    small,
-    Extrasmall,
   } = useStyles();
 
   return (
     <Container>
-      <Card className={ExclusivesContainer}>
-        <Grid container>
+      <Card
+        className={ExclusivesContainer}
+      >
+        <Grid 
+        container
+        direction="row"
+        justifyContent="space-between"
+        >
           <Grid
             container
             xs={6}
             direction="column"
-            justifyContent='space-between'
+            justifyContent="space-between" 
           >
             <Box>
               <Typography variant="h6">
@@ -56,7 +59,11 @@ const Exclusive = () => {
               </Button>
             </Box>
           </Grid>
-          <Grid container justifyContent="flex-end" xs={6}>
+          <Grid 
+          alignItems="flex-end"
+          container direction="column" 
+          justifyContent="flex-end" 
+          xs={6}>
             <Box>
               <img className={ExclusiveImg} src={iphone} />
             </Box>

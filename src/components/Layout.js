@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Typography, makeStyles, AppBar, Toolbar, ThemeProvider, createTheme, Drawer, Link, List} from "@material-ui/core";
+import { Typography, makeStyles, AppBar, Toolbar, Drawer, Link, List, responsiveFontSizes} from "@material-ui/core";
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import { NewReleasesOutlined, Menu } from '@material-ui/icons';
 import Sidebar from './Sidebar';
 import useStyles from '../hooks/useStyles';
@@ -11,7 +12,7 @@ const Layout = ({ children }) => {
   const { page, toolbar, dashboard, appBar, appBarShift, contentShift, root, drawer, drawerPaper, navbar_icon, navbar_link } = useStyles();
   const [ open, setOpen ] = useState(false)
 
-  const theme = createTheme({
+  let theme = createTheme({
     palette: {
       primary: {
         main: '#CCCCCC',
@@ -23,6 +24,8 @@ const Layout = ({ children }) => {
       color: '#103B66'
     },
   });
+
+  theme = responsiveFontSizes(theme);
 
   return (
     <ThemeProvider theme={theme}>

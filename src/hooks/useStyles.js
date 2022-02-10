@@ -184,7 +184,22 @@ const useStyles = makeStyles((theme) => {
       justifyContent: "space-between",
       // width: 356,
       marginBottom: 30,
+
+      [theme.breakpoints.up('xl')]: {
+      //  width: '100%'
+        
+      }
     },
+    // cardheading: {
+    //   [theme.breakpoints.up('xl')]: {
+    //       fontSize:50
+    //     }
+    // },
+    // cardContent: {
+    //   [theme.breakpoints.up('xl')]: {
+    //     fontSize:50
+    //   }
+    // },
     cardHeaderFirst: {
       display: "flex",
       alignItems: "center",
@@ -279,6 +294,10 @@ const useStyles = makeStyles((theme) => {
         backgroundColor: "#08b0f8 ",
       },
     },
+    Ext: {
+      height: "343px",
+      padding: "30px 20px"
+    },
     ExclusiveImg: {
       width: 140,
       height: 280,
@@ -315,6 +334,13 @@ const useStyles = makeStyles((theme) => {
       flexDirection: "column",
       justifyContent: "space-between",
       marginBottom: 30,
+      // width: '100%',
+      // border: '1px solid #000',
+
+      [theme.breakpoints.up('xl')]: {
+        // width: '100%',
+        // border: '1px solid #000'
+      }
     },
     newsCardContent: {
       marginTop: 20,
@@ -339,6 +365,10 @@ const useStyles = makeStyles((theme) => {
       height: "170px",
       marginTop: 30,
       fontFamily: "Noto Sans",
+    },
+    horizontalList: {
+      width: '100%', 
+      height: '100%'
     },
     WorldIcon: {
       fontSize: '150px',
