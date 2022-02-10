@@ -80,7 +80,7 @@ const Content = () => {
               showIcon="show"
             />
           </Grid>
-          <Grid>
+          <Grid item xs={12}>
           <PrimaryCard
               className={newsCard}
               icon={<EventNoteOutlined className={cardHeaderIcon} />}
